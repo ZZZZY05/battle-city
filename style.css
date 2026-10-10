@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  color: #ddd;
+  font-family: "Courier New", "SimSun", monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px;
+}
+
+.wrap {
+  text-align: center;
+}
+
+h1 {
+  color: #e8c44a;
+  font-size: 28px;
+  letter-spacing: 6px;
+  margin-bottom: 14px;
+  text-shadow: 3px 3px 0 #7a4a12;
+}
+
+h1 span {
+  color: #888;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+canvas {
+  background: #000;
+  border: 4px solid #555;
+  outline: 2px solid #222;
+  image-rendering: pixelated;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+#panel {
+  width: 150px;
+  text-align: center;
+}
+
+.box {
+  background: #1e1e1e;
+  border: 2px solid #555;
+  padding: 10px 6px;
+  margin-bottom: 12px;
+}
+
+.box h3 {
+  font-size: 12px;
+  color: #e8c44a;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+#score {
+  font-size: 22px;
+  color: #fff;
+}
+
+#dots {
+  display: grid;
+  grid-template-columns: repeat(2, 16px);
+  gap: 4px;
+  justify-content: center;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #2c2c2c;
+  border: 1px solid #444;
+}
+
+.dot.on {
+  background: #c0392b;
+  border-color: #e74c3c;
+}
+
+#lives .life {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+#stage {
+  font-size: 22px;
+  color: #fff;
+}
+
+.help {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #999;
+  text-align: left;
+}
+
+.foot {
+  margin-top: 12px;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 2px;
+}

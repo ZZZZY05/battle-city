@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>坦克大战 Battle City</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>坦克大战 <span>BATTLE CITY</span></h1>
+  <div class="row">
+    <canvas id="game" width="520" height="520"></canvas>
+    <aside id="panel">
+      <div class="box">
+        <h3>SCORE</h3>
+        <div id="score">0</div>
+      </div>
+      <div class="box">
+        <h3>ENEMY</h3>
+        <div id="dots"></div>
+      </div>
+      <div class="box">
+        <h3>LIVES</h3>
+        <div id="lives"></div>
+      </div>
+      <div class="box">
+        <h3>STAGE</h3>
+        <div id="stage">1</div>
+      </div>
+      <div class="box help">
+        移动：方向键 / WASD<br>
+        射击：空格<br>
+        开始 / 确认：Enter<br>
+        暂停：P
+      </div>
+    </aside>
+  </div>
+  <p class="foot">保护你的基地老鹰，消灭所有敌方坦克！</p>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
